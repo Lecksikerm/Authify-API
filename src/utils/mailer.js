@@ -24,12 +24,13 @@ async function sendOTPEmail(to, otp, purpose = 'verification') {
       <p>This code expires in 10 minutes.</p>
     </div>
   `;
-  return transporter.sendMail({
+
+  const info = await transporter.sendMail({
     from: process.env.MAIL_FROM,
     to,
     subject,
     html
   });
-}
 
+}
 module.exports = { sendOTPEmail };
