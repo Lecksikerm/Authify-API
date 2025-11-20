@@ -69,3 +69,6 @@ Redis >= 7
 npm or yarn
 
 Gmail account for sending OTPs
+
+# Deployment URl
+https://authify-api-project.onrender.com
